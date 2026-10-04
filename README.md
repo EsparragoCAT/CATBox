@@ -1,16 +1,38 @@
-# CATBox — Retro Dialogue Framework
+<div align="center">
 
-Mod para NeoForge 1.21.1 que permite mostrar diálogos de texto animados (estilo retro) en el juego. Hecho por **CAT**.
+<img src="docs/logo.png" alt="CATBox" width="240" />
 
-## Funciones
+# CATBox
+
+**Retro Dialogue Framework**
+
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-22C55E?style=flat-square)](https://www.minecraft.net/)
+[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.252-22C55E?style=flat-square)](https://neoforged.net/)
+[![Build](https://github.com/EsparragoCAT/CATBox/actions/workflows/build.yml/badge.svg)](https://github.com/EsparragoCAT/CATBox/actions/workflows/build.yml)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat-square)](#-licencia)
+
+Mod para **NeoForge 1.21.1** que añade cuadros de diálogo animados estilo retro.
+Hecho con 🟢 por **CAT**.
+
+</div>
+
+---
+
+## ✨ Funciones
 
 - **Diálogos por comando**: muestra una caja de diálogo con hablante, texto animado letra a letra, sonido, icono y color.
-- **Area chat**: con `/textbox area chat true`, TUS mensajes del chat se convierten en textbox para los jugadores cercanos (radio configurable). Solo afecta a quien ejecuta el comando.
-- **Configuración personal**: cada jugador personaliza el visual de su textbox de área (nombre, color, sonido, icono, posición, tiempo y radio).
+- **Area chat**: con `/textbox area chat true`, **tus** mensajes del chat se convierten en textbox para los jugadores cercanos (radio configurable). Solo afecta a quien lo activa.
+- **Configuración personal**: cada jugador personaliza su textbox de área (nombre, color, sonido, icono, textura de caja, posición, tiempo, tamaño y radio).
 - **Iconos flexibles**: ítem de Minecraft, cabeza de jugador (`@nombre`) o imagen por URL.
+- **Textura de caja personalizada**: fondo 9-slice cargado por URL.
 - **Teclas configurables** desde el menú *Controles*.
 
-## Comandos
+## 📥 Instalación
+
+1. Instala **NeoForge** para **Minecraft 1.21.1**.
+2. Copia el `.jar` del mod en la carpeta `mods/` (cliente y servidor).
+
+## 🎮 Comandos
 
 ```
 /textbox <jugadores> <hablante> <texto> <sonido> <icono> <posición> <segundos> <bloqueante> [tamaño]
@@ -19,27 +41,55 @@ Mod para NeoForge 1.21.1 que permite mostrar diálogos de texto animados (estilo
 Ejemplo:
 
 ```
-/textbox @a Steve Hola minecraft:block.note_block.hat @Steve bottom 3 false
+/textbox @a Steve Hola minecraft:block.note_block.hat @Steve bottom 3 false 80
 ```
+
+Activar/desactivar tu area chat (solo operador):
 
 ```
 /textbox area chat true|false
 ```
 
-Activa o desactiva TU area chat (solo operador; afecta únicamente a quien lo ejecuta).
+## ⌨️ Teclas
 
-## Teclas
+| Tecla | Acción |
+|---|---|
+| `V` | Saltar la animación del texto. |
+| `B` | Abrir la configuración de tu textbox de área. |
 
-- `V` — saltar la animación del texto.
-- `B` — abrir la configuración de tu textbox de área.
+## 🎨 Colores
 
-## Colores
-
-En el hablante o el texto se pueden usar códigos de color:
+En el hablante o el texto puedes usar:
 
 - `&#RRGGBB` (hexadecimal), por ejemplo `&#FFAA00`.
 - Códigos de Minecraft como `&c` (rojo), `&a` (verde), etc.
 
-## Configuración
+El color del borde se toma del color del hablante.
 
-La configuración personal se guarda en `config/textbox-area.json`.
+## ⚙️ Configuración
+
+La configuración personal se guarda en:
+
+```
+config/textbox-area.json
+```
+
+Se edita cómodamente desde la interfaz (tecla `B`).
+
+## 📚 Documentación
+
+- [Manual de usuario completo](docs/MANUAL.md)
+- [Especificación de textura de caja](docs/BOX_TEXTURE_SPEC.md)
+- [Plantilla de textura](docs/box_texture_template.png)
+
+## 🔐 Permisos
+
+Nodo de permiso: `textbox.area` (por defecto: operadores, nivel 2).
+
+```
+/lp group <grupo> permission set textbox.area true
+```
+
+## 📄 Licencia
+
+Todos los derechos reservados © CAT.
