@@ -42,13 +42,15 @@ logoFile="logo.png"
 #credits="" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="CAT"
+authors="EsparragoCAT"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-CATBox — Retro Dialogue Framework, by CAT.
+CATBox — Retro Dialogue Framework, by EsparragoCAT.
 Cuadros de diálogo animados estilo retro: hablante, texto letra a letra, sonido, icono,
 colores y tamaño personalizables, y un modo "area chat" que convierte el chat en diálogos locales.
+
+Una firma CAT.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
