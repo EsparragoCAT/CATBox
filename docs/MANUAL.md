@@ -6,9 +6,6 @@ Manual de usuario y referencia del mod.
 estilo retro: el texto se escribe letra a letra, con hablante, sonido, icono,
 colores, tamaño y textura personalizables.
 
-- Marca: **CAT**
-- Color de marca por defecto: verde `#22C55E`
-
 ---
 
 ## Índice
@@ -79,9 +76,9 @@ La textbox aparece como un *overlay* (sobre el mundo) o como *pantalla completa*
 ```
 
 > ⚠️ Por ahora `hablante` y `texto` son **una sola palabra** (sin espacios).
-> Las frases con espacios están pendientes de implementar.
+> Las frases con espacios requieren usar "Hola Hola" por como funciona el comando.
 
-### `/textbox area chat` — activar/desactivar TU area chat
+### `/textbox area chat` — activar/desactivar TU area de chat
 
 ```
 /textbox area chat true|false
