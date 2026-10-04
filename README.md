@@ -8,7 +8,7 @@
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-22C55E?style=flat-square)](https://www.minecraft.net/)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.252-22C55E?style=flat-square)](https://neoforged.net/)
-[![Build](https://github.com/EsparragoCAT/CATBox/actions/workflows/build.yml/badge.svg)](https://github.com/EsparragoCAT/CATBox/actions/workflows/build.yml)
+(https://github.com/EsparragoCAT/CATBox/actions/workflows/build.yml)
 [![License](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)](LICENSE)
 
 Mod para **NeoForge 1.21.1** que añade cuadros de diálogo animados estilo retro.
