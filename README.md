@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red?style=flat-square)](#-licencia)
 
 Mod para **NeoForge 1.21.1** que añade cuadros de diálogo animados estilo retro.
-Hecho con 🟢 por **CAT**.
+Hecho por **EsparragoCAT**.
 
 </div>
 
